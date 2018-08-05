@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="debug," />
+  <meta name="keywords" content="linux,vps," />
 
 
 
@@ -79,18 +79,18 @@
 
 
 
-<meta name="description" content="I have an Ubuntu Server 10.10 32-bit in my home. I’m making SSH connections to it from my PC via Putty. The problem is, sometimes I’m able to login seamlessly. However, sometimes it gives me an error">
-<meta name="keywords" content="debug">
+<meta name="description" content="这次用的bandwagon,购买成功后系统分配地址与端口，在本地如果出现上述情况，检查是否在command中附上-p, 因为默认端口是22. 1ssh -p xxxx root@xxx.xxx.xxx.xxx">
+<meta name="keywords" content="linux,vps">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SSH :connect to host localhost port 22 Connection refused">
 <meta property="og:url" content="https://dabaitudiu.github.io/2018/08/03/test/index.html">
 <meta property="og:site_name" content="Logs">
-<meta property="og:description" content="I have an Ubuntu Server 10.10 32-bit in my home. I’m making SSH connections to it from my PC via Putty. The problem is, sometimes I’m able to login seamlessly. However, sometimes it gives me an error">
+<meta property="og:description" content="这次用的bandwagon,购买成功后系统分配地址与端口，在本地如果出现上述情况，检查是否在command中附上-p, 因为默认端口是22. 1ssh -p xxxx root@xxx.xxx.xxx.xxx">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-08-03T12:20:55.586Z">
+<meta property="og:updated_time" content="2018-08-05T03:24:05.361Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="SSH :connect to host localhost port 22 Connection refused">
-<meta name="twitter:description" content="I have an Ubuntu Server 10.10 32-bit in my home. I’m making SSH connections to it from my PC via Putty. The problem is, sometimes I’m able to login seamlessly. However, sometimes it gives me an error">
+<meta name="twitter:description" content="这次用的bandwagon,购买成功后系统分配地址与端口，在本地如果出现上述情况，检查是否在command中附上-p, 因为默认端口是22. 1ssh -p xxxx root@xxx.xxx.xxx.xxx">
 
 
 
@@ -161,7 +161,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle">c++, linux</p>
+        <p class="site-subtitle">records, if any</p>
       
   </div>
 
@@ -232,9 +232,47 @@
       
 
       
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            搜索
+          </a>
+        </li>
+      
     </ul>
   
 
+  
+    <div class="site-search">
+      
+  
+  <div class="algolia-popup popup search-popup">
+    <div class="algolia-search">
+      <div class="algolia-search-input-icon">
+        <i class="fa fa-search"></i>
+      </div>
+      <div class="algolia-search-input" id="algolia-search-input"></div>
+    </div>
+
+    <div class="algolia-results">
+      <div id="algolia-stats"></div>
+      <div id="algolia-hits"></div>
+      <div id="algolia-pagination" class="algolia-pagination"></div>
+    </div>
+
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+  </div>
+
+
+
+
+    </div>
   
 </nav>
 
@@ -268,7 +306,7 @@
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="dabaitudiu">
       <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
+      <meta itemprop="image" content="/images/lc.png">
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
@@ -315,8 +353,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/debug/" itemprop="url" rel="index">
-                    <span itemprop="name">debug</span>
+                  <a href="/categories/vps/" itemprop="url" rel="index">
+                    <span itemprop="name">vps</span>
                   </a>
                 </span>
 
@@ -334,8 +372,7 @@
                   <i class="fa fa-comment-o"></i>
                 </span>
                 <a href="/2018/08/03/test/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count disqus-comment-count"
-                        data-disqus-identifier="2018/08/03/test/" itemprop="commentCount"></span>
+                  <span class="post-comments-count gitment-comments-count" data-xid="/2018/08/03/test/" itemprop="commentsCount"></span>
                 </a>
               </span>
             
@@ -344,6 +381,11 @@
           
           
 
+          
+            <span class="post-meta-divider">|</span>
+            <span class="page-pv"><i class="fa fa-file-o"> 阅读次数</i>
+            <span class="busuanzi-value" id="busuanzi_value_page_pv" ></span>
+            </span>
           
 
           
@@ -363,16 +405,8 @@
       
 
       
-        <p>I have an Ubuntu Server 10.10 32-bit in my home. I’m making SSH connections to it from my PC via Putty.</p>
-<p>The problem is, sometimes I’m able to login seamlessly. However, sometimes it gives me an error like this: Network error: Connection refused.</p>
-<p>Then, I dont’t change anything, try to login a few times more, wait a while and try again. Sometimes I can log in, sometimes I cannot. It seems pretty random to me.</p>
-<p>What can I do to solve this?</p>
-<a id="more"></a>
-<p>Edit:</p>
-<p>And Sometimes, Putty gives Network error: Software caused connection abort error after displaying login as: text.</p>
-<p>Here is the ping -t output:</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">Pinging 192.168.2.254 with 32 bytes of data:</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=6ms TTL=64</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=65ms TTL=6</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=88ms TTL=6</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=1ms TTL=64</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=3ms TTL=64</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=1ms TTL=64</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=1ms TTL=64</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=1ms TTL=64</span><br><span class="line">Reply from 192.168.2.254: bytes=32 time=1ms TTL=64</span><br></pre></td></tr></table></figure>
-<p>I turned off firewall of router, and everything seems to work now. Except for that, I still can’t enter my web server by typing external IP from my PC.</p>
+        <p>这次用的bandwagon,购买成功后系统分配地址与端口，在本地如果出现上述情况，检查是否在command中<br>附上-p, 因为默认端口是22.</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -p xxxx root@xxx.xxx.xxx.xxx</span><br></pre></td></tr></table></figure>
 
       
     </div>
@@ -390,7 +424,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/debug/" rel="tag"><i class="fa fa-tag"></i> debug</a>
+            <a href="/tags/linux/" rel="tag"><i class="fa fa-tag"></i> linux</a>
+          
+            <a href="/tags/vps/" rel="tag"><i class="fa fa-tag"></i> vps</a>
           
         </div>
       
@@ -446,12 +482,10 @@
 
   
     <div class="comments" id="comments">
-      <div id="disqus_thread">
-        <noscript>
-          Please enable JavaScript to view the
-          <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a>
-        </noscript>
-      </div>
+      
+        <div onclick="showGitment()" id="gitment-display-button">显示 Gitment 评论</div>
+        <div id="gitment-container" style="display:none"></div>
+      
     </div>
 
   
@@ -482,6 +516,10 @@
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
+              <img class="site-author-image" itemprop="image"
+                src="/images/lc.png"
+                alt="dabaitudiu" />
+            
               <p class="site-author-name" itemprop="name">dabaitudiu</p>
               <p class="site-description motion-element" itemprop="description"></p>
           </div>
@@ -493,7 +531,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">4</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
@@ -504,7 +542,7 @@
               
               <div class="site-state-item site-state-categories">
                 <a href="/categories/index.html">
-                  <span class="site-state-item-count">3</span>
+                  <span class="site-state-item-count">5</span>
                   <span class="site-state-item-name">分类</span>
                 </a>
               </div>
@@ -515,7 +553,7 @@
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">4</span>
+                  <span class="site-state-item-count">6</span>
                   <span class="site-state-item-name">标签</span>
                 </a>
               </div>
@@ -576,6 +614,20 @@
 
 
         
+<div class="busuanzi-count">
+  <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+
+  
+    <span class="site-uv">
+      <i class="fa fa-user"> 阅读次数</i>
+      <span class="busuanzi-value" id="busuanzi_value_site_uv"></span>
+      
+    </span>
+  
+
+  
+</div>
+
 
 
 
@@ -695,26 +747,6 @@
 
   
 
-    
-      <script id="dsq-count-scr" src="https://.disqus.com/count.js" async></script>
-    
-
-    
-      <script type="text/javascript">
-        var disqus_config = function () {
-          this.page.url = 'https://dabaitudiu.github.io/2018/08/03/test/';
-          this.page.identifier = '2018/08/03/test/';
-          this.page.title = 'SSH :connect to host localhost port 22 Connection refused';
-        };
-        var d = document, s = d.createElement('script');
-        s.src = 'https://.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', '' + +new Date());
-        (d.head || d.body).appendChild(s);
-      </script>
-    
-
-  
-
 
 
 
@@ -769,7 +801,11 @@
       }
 
       
-      renderGitment();
+      function showGitment(){
+        document.getElementById("gitment-display-button").style.display = "none";
+        document.getElementById("gitment-container").style.display = "block";
+        renderGitment();
+      }
       
       </script>
     
@@ -783,6 +819,19 @@
   
 
 
+
+
+  
+  
+  
+  <link rel="stylesheet" href="/lib/algolia-instant-search/instantsearch.min.css">
+
+  
+  
+  <script src="/lib/algolia-instant-search/instantsearch.min.js"></script>
+  
+
+  <script src="/js/src/algolia-search.js?v=5.1.4"></script>
 
 
 
